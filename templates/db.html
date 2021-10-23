@@ -3,8 +3,17 @@
 <body>
 <div class = "container">
     <h1> DB ...</h1>
+    <!-- <form action="/db" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="submit" value="add name" class="btn btn-secondary">
+    </form> -->
+    <br/><br/>
+    {%for data in db_data%}
+    <h4>
+        {{data.name}}
+    </h4>
+    {% endfor %}
 
 </div>
-
 </body>
 </html>
